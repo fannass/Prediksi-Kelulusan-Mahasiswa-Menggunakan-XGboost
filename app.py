@@ -71,23 +71,3 @@ if st.button("Prediksi Kelulusan"):
     st.write(f"Probabilitas Tepat Waktu: {prediction_proba[0][0]*100:.2f}%")
     st.write(f"Probabilitas Terlambat: {prediction_proba[0][1]*100:.2f}%")
 
-# # Additional aesthetics (optional)
-# st.markdown(
-#     """
-#     <style>
-#     .sidebar .sidebar-content {
-#         background-image: linear-gradient(#2e7bcf,#2e7bcf);
-#         color: white;
-#     }
-#     .reportview-container .main .block-container{
-#         padding-top: 2rem;
-#         padding-right: 2rem;
-#         padding-left: 2rem;
-#         padding-bottom: 2rem;
-#     }
-#     .reportview-container .main {
-#         background-color: #f0f2f6;
-#     }
-#     </style>
-#     """, unsafe_allow_html=True
-# )
