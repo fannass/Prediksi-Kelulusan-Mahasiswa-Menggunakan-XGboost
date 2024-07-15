@@ -19,11 +19,11 @@ def user_input_features():
     jenis_kelamin = st.sidebar.selectbox("Jenis Kelamin", ("LAKI-LAKI", "PEREMPUAN"))
     status_mahasiswa = st.sidebar.selectbox("Status Mahasiswa", ("MAHASISWA", "BEKERJA"))
     status_nikah = st.sidebar.selectbox("Status Nikah", ("BELUM MENIKAH", "MENIKAH"))
-    ips1 = st.sidebar.slider("IPS 1", 0.0, 4.0, 2.0)
-    ips2 = st.sidebar.slider("IPS 2", 0.0, 4.0, 2.0)
-    ips3 = st.sidebar.slider("IPS 3", 0.0, 4.0, 2.0)
-    ips4 = st.sidebar.slider("IPS 4", 0.0, 4.0, 2.0)
-    ips5 = st.sidebar.slider("IPS 5", 0.0, 4.0, 2.0)
+    ips1 = st.sidebar.number_input("IPS 1", min_value=0.0, max_value=4.0, value=2.0, step=0.01)
+    ips2 = st.sidebar.number_input("IPS 2", min_value=0.0, max_value=4.0, value=2.0, step=0.01)
+    ips3 = st.sidebar.number_input("IPS 3", min_value=0.0, max_value=4.0, value=2.0, step=0.01)
+    ips4 = st.sidebar.number_input("IPS 4", min_value=0.0, max_value=4.0, value=2.0, step=0.01)
+    ips5 = st.sidebar.number_input("IPS 5", min_value=0.0, max_value=4.0, value=2.0, step=0.01)
 
     data = {
         'Jenis Kelamin': jenis_kelamin,
