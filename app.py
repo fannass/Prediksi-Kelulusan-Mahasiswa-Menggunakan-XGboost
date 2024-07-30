@@ -47,7 +47,7 @@ st.write(input_df)
 # Encode user input
 input_df_encoded = input_df.copy()
 input_df_encoded['Jenis Kelamin'] = input_df_encoded['Jenis Kelamin'].map({'LAKI-LAKI': 0, 'PEREMPUAN': 1})
-input_df_encoded['Status Mahasiswa'] = input_df_encoded['Status Mahasiswa'].map({'MAHASISWA': 1, 'BEKERJA': 0})
+input_df_encoded['Status Mahasiswa'] = input_df_encoded['Status Mahasiswa'].map({'TIDAK BEKERJA': 1, 'BEKERJA': 0})
 input_df_encoded['Status Nikah'] = input_df_encoded['Status Nikah'].map({'BELUM MENIKAH': 0, 'MENIKAH': 1})
 input_df_encoded.columns = ['JENIS KELAMIN', 'STATUS MAHASISWA', 'STATUS NIKAH', 'IPS 1', 'IPS 2', 'IPS 3', 'IPS 4', 'IPS 5']
 
