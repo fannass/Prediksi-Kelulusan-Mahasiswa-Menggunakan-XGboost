@@ -17,7 +17,7 @@ st.sidebar.header("Input Data Mahasiswa")
 
 def user_input_features():
     jenis_kelamin = st.sidebar.selectbox("Jenis Kelamin", ("LAKI-LAKI", "PEREMPUAN"))
-    status_mahasiswa = st.sidebar.selectbox("Status Mahasiswa", ("MAHASISWA", "BEKERJA"))
+    status_mahasiswa = st.sidebar.selectbox("Status Mahasiswa", ("TIDAK BEKERJA", "BEKERJA"))
     status_nikah = st.sidebar.selectbox("Status Nikah", ("BELUM MENIKAH", "MENIKAH"))
     ips1 = st.sidebar.number_input("IPS 1", min_value=0.0, max_value=4.0, value=2.0, step=0.01)
     ips2 = st.sidebar.number_input("IPS 2", min_value=0.0, max_value=4.0, value=2.0, step=0.01)
