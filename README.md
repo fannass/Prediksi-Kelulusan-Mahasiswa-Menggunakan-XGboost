@@ -1,7 +1,7 @@
-# Student Graduation Prediction with Random Forest
+# Student Graduation Prediction with XGBoost
 
 ## 📚 Project Description
-This project aims to develop a web-based machine learning application for predicting student graduation. Utilizing the *Random Forest* algorithm, this application is built with Python's *Streamlit* framework, providing an intuitive interface for users to input academic and demographic data and display prediction results in a user-friendly manner.
+This project aims to develop a web-based machine learning application for predicting student graduation. Utilizing the *XGBoost* algorithm, this application is built with Python's *Streamlit* framework, providing an intuitive interface for users to input academic and demographic data and display prediction results in a user-friendly manner.
 
 Presentation Link: [Machine Learning Implementation on Student Graduation Prediction](https://youtu.be/-vr4-vIRTJ0)
 
@@ -16,15 +16,18 @@ Presentation Link: [Machine Learning Implementation on Student Graduation Predic
 - **User-Friendly Interface**: Interactive and accessible application built with Streamlit.
 
 ## 🛠 Project Structure
-- `Prediksi Kelulusan.ipynb`: Jupyter Notebook containing model training and evaluation processes.
+- `Prediksi Kelulusan XGBoost.ipynb`: Jupyter Notebook containing XGBoost model training and evaluation processes.
+- `Prediksi Kelulusan.ipynb`: Original Jupyter Notebook containing Random Forest model training.
 - `app.py`: Main file to run the **Streamlit** application.
-- `trained_model.pkl`: Pre-trained model ready for predictions.
+- `trained_model_xgboost.pkl`: Pre-trained XGBoost model ready for predictions.
+- `trained_model.pkl`: Original Random Forest model (not used in current version).
 - `Kelulusan Train.xlsx`: Dataset used for model training.
 - `requirements.txt`: List of dependencies needed to run this project.
 
 ## 🧪 Technologies Used
 - **Python**: Primary programming language.
-- **Scikit-learn**: For implementing the *Random Forest* model.
+- **XGBoost**: For implementing the gradient boosting model.
+- **Scikit-learn**: For data preparation and model evaluation.
 - **Streamlit**: For building the user interface.
 - **Pandas & NumPy**: For data processing and analysis.
 - **Matplotlib & Seaborn**: For data visualization.
